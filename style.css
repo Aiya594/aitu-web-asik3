@@ -199,12 +199,7 @@ button:active {
 
 
 
-.effects-section,
-.fade-section,
-.slide-section,
-.list-section,
-.attr-section,
-.form-section,
+
 .anim-section {
     background-color: #C7B7A3;
     padding: 20px;
@@ -212,12 +207,6 @@ button:active {
     border-radius: 12px;
 }
 
-.effects-section button,
-.fade-section button,
-.slide-section button,
-.list-section button,
-.attr-section button,
-.form-section button,
 .anim-section button {
     margin: 5px;
 }
