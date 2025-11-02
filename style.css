@@ -118,6 +118,15 @@ button {
     border: none;
 }
 
+#slideToggleBtn {
+    border-radius: 8px;
+    background-color: #dba563;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+}
+
 button a {
     color: inherit;
     text-decoration: none;
@@ -163,16 +172,52 @@ button:active {
 }
 
 .contact {
-    background-color: #E8D8C4;  
-    border: 2px solid #561C24;   
-    border-radius: 12px;       
+    background-color: #E8D8C4;
+    border: 2px solid #561C24;
+    border-radius: 12px;
     padding: 15px 20px;
-    width:auto;
+    width: auto;
 }
 
 .contact .logo {
-    width: 24px;              
+    width: 24px;
     height: 24px;
-    vertical-align: middle;    
-    margin-right: 8px;          
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#itemList {
+    display: block;
+    list-style-type: disc;
+}
+
+#itemList li {
+    display: list-item;
+    margin: 6px 0;
+}
+
+
+
+
+.effects-section,
+.fade-section,
+.slide-section,
+.list-section,
+.attr-section,
+.form-section,
+.anim-section {
+    background-color: #C7B7A3;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.effects-section button,
+.fade-section button,
+.slide-section button,
+.list-section button,
+.attr-section button,
+.form-section button,
+.anim-section button {
+    margin: 5px;
 }

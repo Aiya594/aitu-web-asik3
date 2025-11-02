@@ -2,6 +2,10 @@
 <html>
 
 <head>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -21,17 +25,28 @@
                     <li><a href="#footer" class="navBar">Footer</a></li>
                 </ul>
             </nav>
+            <button id="theme-toggle" class="theme-btn">Change Theme</button>
+
         </header>
 
 
         <aside class="sidebar">
             <h4>Sidebar</h4>
-            <p>Clicking on this button you can see my previous assignments:</p>
-            <button><a href="https://asik2.netlify.app/">My webite</a></button><br>
+            <p id="visText">Text to show how does jQuery methods work(hide, show,toggle)</p>
+            <button id="hideBtn">Hide</button>
+            <button id="showBtn">Show</button>
+            <button id="toggleBtn">Toggle</button>
+
+            <h4>List</h4>
+
+            <ul id="itemList"></ul>
+            <button id="addItem">Add Item</button>
+            <button id="removeItem">Remove Last Item</button>
+
         </aside>
 
-
         <main class="main">
+            <button id="slideToggleBtn">Toggle Panel</button>
 
             <div class="card-row" id="cards">
                 <div class="card">
@@ -66,7 +81,12 @@
 
             <div class="gallery" id="gallery">
                 <div class="photo">
-                    <img src="photos/cat.jpg" alt="Cat">
+                    <img id="fadeImg" src="photos/cat.jpg" alt="Cat">
+                    <div class="fade-controls">
+                        <button id="fadeOutBtn">Fade Out</button>
+                        <button id="fadeInBtn">Fade In</button>
+                        <button id="fadeToggleBtn">Fade Toggle</button>
+                    </div>
                 </div>
 
                 <div class="photo">
@@ -74,7 +94,9 @@
                 </div>
 
                 <div class="photo">
-                    <img src="photos/girlies.jpg" alt="Girls">
+                    <img id="changeImg" src="photos/girlies.jpg" alt="Girls">
+                    <br><br>
+                    <button id="changeSrc">Change Image</button>
                 </div>
 
                 <div class="photo">
@@ -105,12 +127,39 @@
             <div class="contact" id="contact">
                 You may contact me via: <br><br>
                 <img src="photos/tgLogo.jfif" class="logo">
-                telegram: @zkkpv 
+                telegram: @zkkpv
 
                 <img src="photos/instagram dark red icon.jfif" class="logo">
                 instagram: @zkkpv
 
+
+                <h3>Send Me a Message</h3>
+                <form id="contactForm">
+                    <label for="contactName">Name:</label><br>
+                    <input type="text" id="contactName" placeholder="Enter your name"><br><br>
+
+                    <label for="contactEmail">Email:</label><br>
+                    <input type="email" id="contactEmail" placeholder="Enter your email"><br>
+                </form>
+                <div class="preview-block">
+                    <h4>Live Preview:</h4>
+                    <p><strong>Name:</strong> <span id="previewName"></span></p>
+                    <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+                </div>
             </div>
+
+
+            <!-- Task 8–10: Animations -->
+            <div class="anim-section">
+                <h2>Animation Playground</h2>
+                <div id="box"
+                    style="width:100px; height:100px; background-color:#561C24; border-radius:10px; margin-bottom:10px;">
+                </div>
+                <button id="animateBtn">Animate</button>
+                <button id="sequenceBtn">Sequential Animation</button>
+                <button id="combinedBtn">Combined Animation</button>
+            </div>
+
         </main>
 
         <footer class="footer" id="footer">
@@ -118,5 +167,8 @@
         </footer>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
