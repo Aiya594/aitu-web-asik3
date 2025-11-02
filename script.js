@@ -72,8 +72,15 @@ $(document).ready(function () {
     });
 
     // Task 4: Slide
+
     $("#slideToggleBtn").click(function () {
         $("#cards").slideToggle(600)
+    });
+    $("#slideUpBtn").click(function () {
+        $("#cards").slideUp(600)
+    });
+    $("#slideDownBtn").click(function () {
+        $("#cards").slideDown(600)
     });
 
     // Task 5: Add & Remove
